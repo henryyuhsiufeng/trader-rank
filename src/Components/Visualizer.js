@@ -16,10 +16,7 @@ const useStyles = makeStyles({
   },
 });
 
-function createData(name, traderRank) {
-  return { name, traderRank };
-}
-
+// Dummy data
 const rows = [
   {
     name: "Alex Wice",
@@ -60,7 +57,7 @@ const rows = [
 
 function Visualizer() {
   const classes = useStyles();
-  // on page load
+  // on page load sort the rankings
   useEffect(() => {
     rows.sort((a, b) => (a.traderRank < b.traderRank ? 1 : -1));
   }, []);

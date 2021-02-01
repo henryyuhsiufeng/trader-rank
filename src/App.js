@@ -1,9 +1,9 @@
 import "./App.css";
 import * as React from "react";
 import Visualizer from "./Components/Visualizer";
-import Timer from "react-compound-timer";
 const { useEffect, useState } = React;
 
+// for the future
 const fetchData = async () => {
   return await fetch("")
     .then((response) => response.text())
@@ -28,19 +28,6 @@ function App() {
       <h1 style={{ textAlign: "center" }}>Top Traders</h1>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Visualizer />
-      </div>
-      <div style={{ textAlign: "center", fontWeight: "bold", marginTop: "5%" }}>
-        <span>Next update in: </span>
-        <Timer initialTime={timeForUpdate} direction="backward">
-          {() => (
-            <React.Fragment>
-              <Timer.Days /> {days}
-              <Timer.Hours /> {hours}
-              <Timer.Minutes /> {minutes}
-              <Timer.Seconds /> {seconds}
-            </React.Fragment>
-          )}
-        </Timer>
       </div>
     </>
   );
