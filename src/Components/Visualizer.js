@@ -12,7 +12,7 @@ const { useEffect, useState } = React;
 
 const useStyles = makeStyles({
   table: {
-    maxWidth: 600,
+    maxWidth: "100%",
   },
 });
 
@@ -73,7 +73,7 @@ function Visualizer() {
                   Top Shillers
                 </TableCell>
                 <TableCell style={{ fontWeight: "bold", textAlign: "center" }}>
-                  TraderRank Score
+                  Score
                 </TableCell>
               </TableRow>
             </TableHead>
