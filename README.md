@@ -4,7 +4,7 @@ Find the top traders for your next crypto investment! Using sentiment analysis o
 
 ### Team
 
-- Samuel Shteyman
-- Henry Feng
-- Walter Ritchie
-- Ronald Hood
+- Samuel Shteyman (Full stack)
+- Henry Feng (Full stack)
+- Walter Ritchie (Full stack)
+- Ronald Hood (Algorithms)
