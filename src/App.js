@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Top Traders</h1>
+      <h1 style={{ textAlign: "center" }}>Trader Rank</h1>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <Visualizer />
       </div>
